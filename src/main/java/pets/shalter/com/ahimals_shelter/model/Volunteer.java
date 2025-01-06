@@ -7,6 +7,11 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Component;
 
+/**
+ * Класс, представляющий волонтера.
+ * Он связывает пользователя с приютом, в котором волонтер работает.
+ * @params id, name, telegramUsername
+ */
 @Component
 @Data
 @Entity

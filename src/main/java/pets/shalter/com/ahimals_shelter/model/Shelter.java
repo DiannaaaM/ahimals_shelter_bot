@@ -7,6 +7,11 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Component;
 
+/**
+ * Класс, представляющий приют для животных.
+ * Он содержит информацию о приюте, такую как имя, контакты и адрес.
+ * @params id, name, location, schedule, contactDetails
+ */
 @Component
 @Data
 @Entity

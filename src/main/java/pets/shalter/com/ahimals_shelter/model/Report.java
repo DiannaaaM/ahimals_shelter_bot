@@ -7,6 +7,14 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.stereotype.Component;
 
+/**
+ * Класс, представляющий отчет о состоянии животного в приюте.
+ *
+ * Этот класс содержит информацию о животных, относящуюся к их рациону, состоянию и
+ * изменениям в поведении. Отчеты создаются пользователями или волонтерами для
+ * мониторинга здоровья и благополучия животных в приюте.
+ * @params petId, photo, diet, conditions, behaviorChanges, userId, reviewed
+ */
 @Component
 @Data
 @Entity

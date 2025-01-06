@@ -4,6 +4,13 @@ import com.pengrad.telegrambot.model.Update;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * Сервис для обработки команд, получаемых от пользователей через Telegram-бота.
+ *
+ * Этот класс отвечает за интерпретацию входящих команд и соответствующую реакцию бота.
+ * Команды обрабатываются с учетом текущего состояния взаимодействия с пользователем,
+ * включая процесс регистрации.
+ */
 @Service
 public class CommandHandlerService {
 
@@ -13,6 +20,11 @@ public class CommandHandlerService {
     @Autowired
     private RegistrationService registrationService;
 
+    /**
+     * Обрабатывает входящие команды от пользователя.
+     *
+     * @param update Обновление из Telegram, содержащее информацию о команде и чате.
+     */
     public void handleCommand(Update update) {
         Long chatId = update.message().chat().id();
         String messageText = update.message().text();

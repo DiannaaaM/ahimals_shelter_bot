@@ -1,7 +1,11 @@
 package pets.shalter.com.ahimals_shelter.model;
 
 import jakarta.persistence.*;
-
+/**
+ * Класс, представляющий пользователя системы.
+ * Он содержит информацию о пользователе, такой как номер чата, имя и email.
+ * @params id, name, chatId, contact
+ */
 @Entity
 public class User {
 
