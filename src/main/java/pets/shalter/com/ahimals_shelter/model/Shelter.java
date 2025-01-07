@@ -19,4 +19,46 @@ public class Shelter {
     private String location;
     private String schedule;
     private String contactDetails;
+
+    public Shelter() {};
+
+    public Shelter(Long id, String name, String location, String schedule, String contactDetails) {
+        this.id = id;
+        this.name = name;
+        this.location = location;
+        this.schedule = schedule;
+        this.contactDetails = contactDetails;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getSchedule() {
+        return schedule;
+    }
+
+    public void setSchedule(String schedule) {
+        this.schedule = schedule;
+    }
+
+    public String getContactDetails() {
+        return contactDetails;
+    }
+
+    public void setContactDetails(String contactDetails) {
+        this.contactDetails = contactDetails;
+    }
 }
